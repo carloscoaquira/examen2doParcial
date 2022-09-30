@@ -1,3 +1,19 @@
 h1{
     color: aqua;
 }
+
+
+/*listado de personas*/
+.listadoPersonas__screen{
+    min-height: 50px;
+}
+.Listado-error{
+    font-size: 10px;
+}
+
+/*reloj digital*/
+.relojdigital-main{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
