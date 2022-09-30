@@ -7,7 +7,8 @@ h1{
 .listadoPersonas__screen{
     min-height: 50px;
 }
-.Listado-error{
+.Listado-error,
+.span-errorJson{
     font-size: 10px;
 }
 
@@ -16,4 +17,29 @@ h1{
     position: fixed;
     bottom: 0;
     right: 0;
+    z-index: 10;
+}
+.cerrarReloj{
+    position: relative;
+}
+.cerrarReloj button{
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+}
+.hidden{
+    display: none !important;
+}
+
+/*convert Json*/
+.convert-Json-Csv{
+    height: 50vh;
+}
+.convert-Json-Csv div{
+    height: 100% !important;
+}
+.convert-Json-Csv #JsonToCsv textarea{
+    width: 100% !important;
+    height: 100% !important;
 }

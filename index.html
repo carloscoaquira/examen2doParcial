@@ -62,9 +62,31 @@
         </section>
 
         <section class="relojdigital-main">
+          <div class="cerrarReloj">
+            <button id="closeReloj" type="button" class="btn btn-primary bg-warning">X</button>
+          </div>
           <div class="container bg-primary p-3 text-white text-center">
             <div id="hora">Reloj Digital</div>
             <div id="fecha">con Javascript</div>
+          </div>
+        </section>
+
+
+        <section class="convert-Json-Csv mt-5">
+          <div class="container">
+            <div id="JsonToCsv">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h3>Arreglo Json</h3>
+                  <textarea name="" id="jsonForm" class="p-2"></textarea>
+                  <button id="convertJson" type="button" class="btn btn-primary">Convertir</button> <span class="span-errorJson"></span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h3>CSV</h3>
+                  <textarea name="" id="csvform" class="p-2"></textarea>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -78,5 +100,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/listadoPersonas.js"></script>
     <script src="./js/reloj.js"></script>
+    <script src="./js/jsonToCsv.js"></script>
   </body>
 </html>

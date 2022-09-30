@@ -22,6 +22,9 @@ const mostrarReloj = ()=> {
     let textoFecha = `${dia}, ${mes} del  ${Año}`
     document.querySelector('#fecha').innerHTML = textoFecha;
 };
-
+const btnCerrar = document.querySelector('#closeReloj');
+btnCerrar.addEventListener('click', () =>{
+    document.querySelector('.relojdigital-main').classList.add('hidden');
+});
 
 setInterval(mostrarReloj, 1000);
