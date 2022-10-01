@@ -1,3 +1,12 @@
-h1{
-    color: aqua;
+/*Calculadora*/
+.calculadora-buttons .btn.btn-block{
+    height: 100%;
+}
+.calculadora-screen{
+    min-height: 50px;
+}
+.calculadora-screen .col-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
