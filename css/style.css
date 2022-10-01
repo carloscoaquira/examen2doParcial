@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Calculadora*/
 .calculadora-buttons .btn.btn-block{
     height: 100%;
@@ -9,4 +10,50 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+=======
+h1{
+    color: aqua;
+}
+
+
+/*listado de personas*/
+.listadoPersonas__screen{
+    min-height: 50px;
+}
+.Listado-error,
+.span-errorJson{
+    font-size: 10px;
+}
+
+/*reloj digital*/
+.relojdigital-main{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+.cerrarReloj{
+    position: relative;
+}
+.cerrarReloj button{
+    position: absolute;
+    top: -10px;
+    right: 0;
+
+}
+.hidden{
+    display: none !important;
+}
+
+/*convert Json*/
+.convert-Json-Csv{
+    height: 50vh;
+}
+.convert-Json-Csv div{
+    height: 100% !important;
+}
+.convert-Json-Csv #JsonToCsv textarea{
+    width: 100% !important;
+    height: 100% !important;
+>>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
 }

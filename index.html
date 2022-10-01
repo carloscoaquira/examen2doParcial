@@ -2,23 +2,34 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Pagina principal</title>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                Pagina Principal
-            </a>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Pagina Principal
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/presupuesto.html">Presupuesto</a>
+            <a class="nav-item nav-link" href="/trello.html">Trello</a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
         <div class="container">
@@ -102,13 +113,80 @@
             </div>
           </div>
         </div>
+
+
+
+        <section class="listado-personas">
+          <div class="container listadoPersonas bg-warning p-4">
+            <h2 class="p-2 bg-primary text-white text-center">Listado de Personas</h2>
+
+            <div class="container listadoPersonas__screen bg-white mb-3">
+              <ul id="list-content" class="p-3">
+              </ul>
+            </div>
+            <form id="form-lista" class="container listadoPersonas__buttons bg-white p-3">
+              <div class="text-center">
+                <input id="createPersona" class="btn btn-primary " type="submit">
+              </div>
+              <div class="row pt-2">
+                <div class="col-6">
+                  <input id="nombrePersona" class="form-control" type="text" placeholder="Nombre" required>
+                  <span class="Listado-error"></span>
+                </div>
+                <div class="col-6">
+                  <input id="apellidoPersona" class="form-control" type="text" placeholder="Apellido">
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="relojdigital-main">
+          <div class="cerrarReloj">
+            <button id="closeReloj" type="button" class="btn btn-primary bg-warning">X</button>
+          </div>
+          <div class="container bg-primary p-3 text-white text-center">
+            <div id="hora">Reloj Digital</div>
+            <div id="fecha">con Javascript</div>
+          </div>
+        </section>
+
+
+        <section class="convert-Json-Csv mt-5">
+          <div class="container">
+            <div id="JsonToCsv">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h3>Arreglo Json</h3>
+                  <textarea name="" id="jsonForm" class="p-2"></textarea>
+                  <button id="convertJson" type="button" class="btn btn-primary">Convertir</button> <span class="span-errorJson"></span>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h3>CSV</h3>
+                  <textarea name="" id="csvform" class="p-2"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </main>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     <script src="/js/calculadora.js"></script>
+=======
+    <script src="./js/listadoPersonas.js"></script>
+    <script src="./js/reloj.js"></script>
+    <script src="./js/jsonToCsv.js"></script>
+>>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
   </body>
 </html>
