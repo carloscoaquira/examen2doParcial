@@ -32,6 +32,25 @@
       </nav>
     </header>
     <main>
+      <section class="section-hero bg-image rounded-3" style="
+          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 95vh;
+        ">
+        <div class="p-5 text-center">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white p-5">
+                <h1 class="mb-3">Ejercicios con Javascript</h1>
+                <h4 class="mb-3">El unico proposito del sitio es mostrar algunos de los Ejercicios realizados con JavaScript</h4>
+                <a class="btn btn-outline-light btn-lg" href="#!" role="button">Ver Codigo del sitio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-calculadora bg-dark">
         <div class="container">
           <div id="calculadora" class="calculadora-main bg-success p-5 rounded">
             <div class="calculadora-screen row">
@@ -46,13 +65,13 @@
                   <button type="button" value="limpiar" class="btn btn-primary btn-block">C</button>
                 </div>
                 <div class="col-3">
-                  <button type="button" value="operador" class="btn btn-primary btn-block">/</button>
+                  <button type="button" value="operador" data-operacion="dividir" class="btn btn-primary btn-block">/</button>
                 </div>
                 <div class="col-3">
-                  <button type="button" value="operador" class="btn btn-primary btn-block">x</button>
+                  <button type="button" value="operador" data-operacion="multiplicar"  class="btn btn-primary btn-block">x</button>
                 </div>
                 <div class="col-3">
-                  <button type="button" value="operador" class="btn btn-primary btn-block">-</button>
+                  <button type="button" value="operador" data-operacion="restar" class="btn btn-primary btn-block">-</button>
                 </div>
               </div>
               <div class="row pt-4">
@@ -81,7 +100,7 @@
                   </div>
                 </div>
                 <div class="col-3">
-                  <button type="button" value="operador" class="btn btn-primary btn-block">+</button>
+                  <button type="button" value="operador" data-operacion="sumar" class="btn btn-primary btn-block">+</button>
                 </div>
               </div>
               <div class="row pt-4">
@@ -113,7 +132,7 @@
             </div>
           </div>
         </div>
-
+      </section>
 
 
         <section class="listado-personas">
@@ -152,10 +171,10 @@
         </section>
 
 
-        <section class="convert-Json-Csv mt-5">
+        <section class="convert-Json-Csv bg-dark">
           <div class="container">
             <div id="JsonToCsv">
-              <div class="row">
+              <div class="row text-white">
                 <div class="col-12 col-md-6">
                   <h3>Arreglo Json</h3>
                   <textarea name="" id="jsonForm" class="p-2"></textarea>
@@ -171,22 +190,16 @@
         </section>
 
     </main>
-<<<<<<< HEAD
-=======
-    
->>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<<<<<<< HEAD
+
     <script src="/js/calculadora.js"></script>
-=======
     <script src="./js/listadoPersonas.js"></script>
     <script src="./js/reloj.js"></script>
     <script src="./js/jsonToCsv.js"></script>
->>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
   </body>
 </html>

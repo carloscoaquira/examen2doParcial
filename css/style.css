@@ -1,5 +1,14 @@
-<<<<<<< HEAD
+
 /*Calculadora*/
+.section-calculadora,
+.listado-personas,
+.convert-Json-Csv,
+.section-hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .calculadora-buttons .btn.btn-block{
     height: 100%;
 }
@@ -10,9 +19,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-=======
-h1{
-    color: aqua;
 }
 
 
@@ -46,14 +52,15 @@ h1{
 }
 
 /*convert Json*/
-.convert-Json-Csv{
-    height: 50vh;
-}
-.convert-Json-Csv div{
-    height: 100% !important;
+.convert-Json-Csv .row{
+    min-height: 40vh;
 }
 .convert-Json-Csv #JsonToCsv textarea{
     width: 100% !important;
-    height: 100% !important;
->>>>>>> f6d264240d17f0ccf98bb7aef7447db30de606a6
+    max-height: 100%;
+}
+@media (min-width: 768px){
+    .convert-Json-Csv #JsonToCsv textarea{
+        height: 100% !important;
+    }   
 }
