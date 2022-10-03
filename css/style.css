@@ -67,6 +67,25 @@
 
 
 /*elemento Importante Mensaje*/
+.cotnainer-monto{
+    max-width: 500px;
+    margin: 0 auto;
+}
+#montoDisponible{
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+#form-presupuesto input{
+    max-width: 100%;
+    width: 100%;
+}
+@media (max-width: 767px ){
+    #form-presupuesto .contentFooter{
+        margin-top: 20px;
+    }   
+}
+
 .elementoImportanteMensaje{
     position: fixed;
     top: 0;
@@ -80,7 +99,5 @@
     justify-content: center;
     background-color: #343a40 !important;
     z-index: 10;
-}
-.elementoImportanteMensaje p{
     color: #fff;
 }
